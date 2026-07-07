@@ -1,5 +1,3 @@
-import com.sun.source.tree.Scope;
-
 import java.util.*;
 
 public class Guidance {
@@ -51,7 +49,7 @@ public class Guidance {
 
         }
     }
-// add course
+    // add course
     public void addCourse(Course course) {
 
         courses.add(course);
@@ -68,7 +66,7 @@ public class Guidance {
     }
     public void displayInstructorAssignments(){
 
-        for(Map.Entry<Course,Instructor> entry :
+        for(Map.Entry<Course, Instructor> entry :
 
                 instructors.entrySet()){
 
@@ -88,3 +86,5 @@ public class Guidance {
     public void displayCourses() {
     }
 }
+
+

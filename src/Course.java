@@ -1,8 +1,17 @@
-
+import java.util.ArrayList;
+import java.util.List;
 public class Course {
-    private List<Student> enrolledStudents = new ArrayList<>();
+private List<Student>enrolledStudents=new ArrayList<>();
+
+    public Course() {
+
+    }
+
+    public Course(int i, String databaseSystems, int i1) {
+    }
 
     public void enrollStudent(Student student) {
+
         enrolledStudents.add(student);
     }
 
@@ -12,47 +21,63 @@ public class Course {
         }
     }
 
-    private int courseId;
+    private int id;
+    private int courseCode;
     private String courseName;
-    private int creditHours;
+    private int courseCredit;
 
-    public Course(int courseId, String courseName, int creditHours) {
+    public Course(int id,int courseCode, String courseName, int courseCredit) {
 
-        this.courseId = courseId;
+       this.id=id;
+       this.courseCode = courseCode;
         this.courseName = courseName;
-        this.creditHours = creditHours;
+        this.courseCredit = courseCredit;
     }
 
-    public int getCourseId() {
-        return courseId;
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public int getCourseCode() {
+        return courseCode;
     }
 
     public String getCourseName() {
         return courseName;
     }
 
-    public int getCreditHours() {
-        return creditHours;
+    public int getcourseCredit() {
+        return courseCredit;
     }
 
-    public void setCourseId(int courseId) {
-        this.courseId = courseId;
+    public void setCourseCode(int courseCode) {
+        this.courseCode = courseCode;
     }
 
     public void setCourseName(String courseName) {
         this.courseName = courseName;
     }
 
-    public void setCreditHours(int creditHours) {
-        this.creditHours = creditHours;
-    }
-
     @Override
     public String toString() {
-
-        return "Course ID: " + courseId +
-                "\nCourse Name: " + courseName +
-                "\nCredit Hours: " + creditHours;
+        return "Course{" +
+                "enrolledStudents=" + enrolledStudents +
+                ", id=" + id +
+                ", courseCode=" + courseCode +
+                ", courseName='" + courseName + '\'' +
+                ", courseCredit=" + courseCredit +
+                '}';
     }
-}
+
+    public void setCourseCredit(int courseCredit) {
+        this.courseCredit= courseCredit;
+    }
+
+
+    }
+
 

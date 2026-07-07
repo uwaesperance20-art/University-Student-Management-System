@@ -1,10 +1,10 @@
-public class Undergraduates extends Student{
+
+public class Undergraduates extends Student {
     private int credit;
 
     public String getCourseName() {
         return courseName;
     }
-
     public void setCourseName(String courseName) {
         this.courseName = courseName;
     }
@@ -20,8 +20,8 @@ public class Undergraduates extends Student{
         this.credit = credit;
     }
 
-    public Undergraduates(int id, String name, int age, double marks, double gpa, int credit, String courseName) {
-        super(id, name, age, marks, gpa);
+    public Undergraduates(int id, String name, int age, double marks,String program, double gpa, int credit, String courseName) {
+        super(id, name, age, marks,program, gpa);
         this.credit=credit;
         this.courseName=courseName;
 
@@ -32,3 +32,5 @@ public class Undergraduates extends Student{
         return super.calculateGPA();
     }
 }
+
+

@@ -1,11 +1,25 @@
 public class Student extends Person {
     private double marks;
     private double gpa;
+    private String  program;
 
-    public Student(int id, String name, int age, double marks, double gpa) {
+    public Student(int id, String name, int age, double marks,String program, double gpa) {
         super(id, name, age);
         this.marks=marks;
         this.gpa=gpa;
+        this.program=program;
+    }
+
+    public String getProgram() {
+        return program;
+    }
+
+    public void setProgram(String program) {
+        this.program = program;
+    }
+
+    public Student() {
+        super();
     }
 
     public double getMarks() {

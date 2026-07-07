@@ -1,5 +1,9 @@
-public class Graduates extends Student{
+public class Graduates extends Student {
     private int courseCredits;
+
+    public Graduates(int id, String jean, int age, double marks, double gpa) {
+        super();
+    }
 
     public String getCourseName() {
         return courseName;
@@ -20,8 +24,8 @@ public class Graduates extends Student{
         this.courseCredits = courseCredits;
     }
 
-    public Graduates(int id, String name, int age, double marks, double gpa, int courseCredits, String courseName) {
-        super(id, name, age, marks, gpa);
+    public Graduates(int id, String name, int age, double marks,String program, double gpa, int courseCredits, String courseName) {
+        super(id, name, age, marks,program, gpa);
         this.courseCredits=courseCredits;
         this.courseName=courseName;
 
@@ -35,3 +39,5 @@ public class Graduates extends Student{
 
     }
 }
+
+
